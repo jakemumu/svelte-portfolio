@@ -1,6 +1,7 @@
 <script>
   import "../app.css";
-  import Nav from './Nav.svelte';
+  import Nav from './shared/Nav.svelte';
+  import Footer from './shared/Footer.svelte';
 </script>
 
 <head>
@@ -13,28 +14,6 @@
 
 <body class="h-screen mx-auto bg-light-grey text-dark-grey">
 <Nav/>
-<div class="px-10 mt-32">
-    <h1 class="text-[10vw]/[9vw] font-bold">JACOB&nbsp;PENN</h1>
-    <h1 class="text-[10vw]/[9vw] font-bold">AUDIO&nbsp;PERSON</h1>
-    <p class="text-[3vw]/[3.4vw] font-semibold mt-8">
-        With engineering, product design and <br>
-        entrepreneurship, I aim to create powerful <br>
-        experiences in music production & technology.
-    </p>
-    <div class="mt-20">
-        <a href="mailto:jake@minimal.audio">
-            <p class="text-[1.5vw] inline border-[.1vw] rounded-full border-dark-grey py-5 px-10 hover:font-bold">
-                jake@minimal.audio
-            </p>
-        </a>
-    </div>
-    <div class="mt-20 flex flex-row justify-between">
-        <p>All Access</p>
-        <p>Discover</p>
-    </div>
-</div>
-<div>
-    <img src="landing_all_access.png" alt="All Access Ad">
-</div>
 <slot/>
+<Footer/>
 </body>
